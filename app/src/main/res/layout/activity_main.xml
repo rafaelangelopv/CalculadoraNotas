@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!--Nota 01-->
+    <EditText
+        android:id="@+id/Nota01"
+        android:layout_width="195dp"
+        android:layout_height="55dp"
+        android:background="@android:color/darker_gray"
+        android:hint="@string/Nota01"
+        android:inputType="number"
+        android:lineSpacingExtra="8sp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105"
+        android:importantForAutofill="no" />
+    <!--Nota 02-->
+    <EditText
+        android:id="@+id/Nota02"
+        android:layout_width="195dp"
+        android:layout_height="55dp"
+        android:background="@android:color/darker_gray"
+        android:hint="@string/Nota02"
+        android:inputType="number"
+        android:lineSpacingExtra="8sp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nota01"
+        app:layout_constraintVertical_bias="0.069"
+        android:importantForAutofill="no" />
+    <!--Faltas-->
+    <EditText
+        android:id="@+id/Faltas"
+        android:layout_width="195dp"
+        android:layout_height="55dp"
+        android:background="@android:color/darker_gray"
+        android:hint="@string/faltas"
+        android:inputType="number"
+        android:lineSpacingExtra="8sp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nota02"
+        app:layout_constraintVertical_bias="0.102"
+        android:importantForAutofill="no" />
+
+       <!--Botão Calcular-->
+    <Button
+        android:id="@+id/btCalculate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="@color/gray"
+        android:hapticFeedbackEnabled="false"
+        android:padding="10dp"
+        android:text="@string/btCalculate"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Faltas"
+        app:layout_constraintVertical_bias="0.224" />
+    <!--Resultado-->
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="321dp"
+        android:layout_height="209dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCalculate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
